@@ -219,6 +219,9 @@ def open_win_login():
                                 if(score < 0.4):
                                     win_login.destroy()
                                     show_notification("Статус входа", f"Вы успешно вошли!", win_main)
+                                else:
+                                    win_login.destroy()
+                                    show_notification("Статус входа", f"Ошибка! Похоже - это не ваша подпись. Попробуйте занаво!", win_main)
                                     
                             
                             except Exception as e:
